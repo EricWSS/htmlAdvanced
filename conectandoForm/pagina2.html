@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 2</title>
+</head>
+<body>
+
+  <h2>Dados do Formulário</h2>
+
+  <div id="dadosFormulario"></div>
+
+  <script>
+    // Recupera os valores armazenados em localStorage
+    let nome = localStorage.getItem('nome');
+    let email = localStorage.getItem('email');
+
+    // Exibe os valores na página
+    let dadosFormulario = document.getElementById('dadosFormulario');
+    dadosFormulario.innerHTML = `
+      <p><strong>Nome:</strong> ${nome}</p>
+      <p><strong>E-mail:</strong> ${email}</p>
+    `;
+  </script>
+
+</body>
+</html>

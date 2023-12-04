@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ol {
+      counter-reset: item;
+    }
+
+    li {
+      display: block;
+    }
+
+    li:before {
+      content: counters(item, ".") "";
+      counter-increment: item;
+    }
+  </style>
+</head>
+
+<body>
+  <p>parágrafo</p>
+  <br>
+  <h1>título</h1>
+  <br>
+  <b>negão</b>
+  <br>
+  <strong>importante</strong>
+  <br>
+  <i>itálico</i>
+  <br>
+  <em>enfase</em>
+  <br>
+  <mark>texto markado</mark>
+  <br>
+  <small>texto pequeno</small>
+  <br>
+  <del>taxado</del>
+  <br>
+  <ins>inserido/sublinhado</ins>
+  <br>
+  <span>texto normal </span>
+  <sub>subscrito</sub>
+  <br>
+  <span>texto normal </span>
+  <sup>superescrito</sup>
+  <br>
+
+  <ol>
+    <li>. Ressumo 1.
+      <ol>
+        <li>. Ressumo Simples 1.1</li>
+        <li>. Ressumo Composto 1.2</li>
+      </ol>
+    </li>
+  </ol>
+
+
+  <dl>
+    <dt>Feijão:</dt>
+    <dd>Fradinho</dd>
+    <dd>Carioquinha</dd>
+    <dd>Preto</dd>
+    <dt>Arroz</dt>
+    <dd>Parbonizado</dd>
+    <dd>Branco</dd>
+    <dd>De cachorro</dd>
+    <audio src="robssao.mp3" controls></audio>
+
+
+  </dl>
+  <video src="rob.mp4" controls></video> <!-- tem o vídeo na sua máquina -->
+  <iframe width="444" height="480" src="https://www.youtube.com/embed/np5KLBQubeg"
+    title="GOD OF WAR 4 REMASTERED Gameplay Walkthrough FULL GAME (4K 60FPS) No Commentary" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+
+
+  <form action="/submit" method="post">
+    <!-- Input de Texto -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br>
+
+    <!-- Radio Buttons -->
+    <label>Gênero:</label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <label for="feminino">Feminino</label>
+    <input type="radio" id="outro" name="genero" value="outro">
+    <label for="outro">Outro</label>
+    <br>
+
+    <!-- Select -->
+    <label for="cidade">Cidade:</label>
+    <select id="cidade" name="cidade">
+      <option value="sp">São Paulo</option>
+      <option value="rj">Rio de Janeiro</option>
+      <option value="bh">Belo Horizonte</option>
+      <option value="poa">Porto Alegre</option>
+    </select>
+    <br>
+
+    <!-- Botão de Envio -->
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p>&copy;Eric, tudo nosso e nada deles.</p>
+
+  <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+    <p>
+      O Elemento HTML &lt;blockquote&gt; indica que um texto externo foi citado.
+    </p>
+  </blockquote>
+
+  <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+    Usado para citações curtas que não precisam de parágrafos ou quebras de linha.
+  </q>
+  <br>
+  <abbr title="HyperText Markup Language">HTML</abbr>
+  <br>
+
+  <p>Pressione <kbd>Enter</kbd> para enviar.</p>
+
+    <br>
+    <p>O comando <samp>ls -l</samp> exibe detalhes do diretório.</p>
+
+   
+</body>
+
+</html>

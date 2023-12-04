@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+
+  <form id="myForm" action="pagina2.html" method="GET" onsubmit="enviar()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+   function enviar(){
+      // Captura os valores dos campos
+      
+      let nome = document.getElementById('nome').value; 
+      let email = document.getElementById('email').value;
+
+      // Armazena os valores em localStorage
+      localStorage.setItem('nome', nome);
+      localStorage.setItem('email', email);
+
+      // Redireciona para a próxima página
+      location.href = this.getAttribute('action');
+    };
+  </script>
+
+</body>
+</html>
